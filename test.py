@@ -1,8 +1,7 @@
-def get_full_name(first_name: str, last_name: str):
-    full_name = first_name.title() + " " + last_name.title()
-    first_name.
-    return full_name
+from jose import JWTError, jwt
+from security import SECRET_KEY, JWT_ALGORITHM
 
-x = get_full_name('inacio', 'oliveira')
+token = "eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJzdWIiOnsidXNlcm5hbWUiOiJBZG1pbiIsImVtYWlsIjoiYWRtaW5AYmlibGlva2VpYS5jb20ifSwiZXhwIjoxNjUyODA2NTg5fQ.NUtLFaJ7V5tLhJVD9u39RHzA5YyzOwBMjpJgTe7PE99FKCWg7ARwpd0hWoQzQ17fItxc1oujUu8bSVLiq-dfjQ"
 
-print(x)
+
+payload = jwt.decode(token, SECRET_KEY, algorithms=[JWT_ALGORITHM])

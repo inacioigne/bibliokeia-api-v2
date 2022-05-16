@@ -116,7 +116,7 @@ class User(Base):
     created_at = Column(Date, default=datetime.now())
 
     def json(self):
-        return {'id': self.id, 'name': self.name}
+        return {'id': self.id, 'name': self.name, "email": self.email}
 
     def __repr__(self):
         
