@@ -1,7 +1,8 @@
-from jose import JWTError, jwt
-from security import SECRET_KEY, JWT_ALGORITHM
+from src.schemas.users.user_schema import User_Request, UserCreateRequest
 
-token = "eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJzdWIiOnsidXNlcm5hbWUiOiJBZG1pbiIsImVtYWlsIjoiYWRtaW5AYmlibGlva2VpYS5jb20ifSwiZXhwIjoxNjUyODA2NTg5fQ.NUtLFaJ7V5tLhJVD9u39RHzA5YyzOwBMjpJgTe7PE99FKCWg7ARwpd0hWoQzQ17fItxc1oujUu8bSVLiq-dfjQ"
+user = {
+  "name": "eu",
+  "email": "eu@mail.com",
+  "password": "123"
+}
 
-
-payload = jwt.decode(token, SECRET_KEY, algorithms=[JWT_ALGORITHM])

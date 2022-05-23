@@ -44,7 +44,7 @@ app.add_middleware(
 
 
 app.include_router(login.router, tags=['Login'])
-app.include_router(users.router, tags=['Users'])
+app.include_router(users.router, prefix='/user', tags=['Users'])
 app.include_router(items.router, prefix='/cataloging/item', tags=['Cataloguing Item'])
 app.include_router(exemplar.router, prefix='/cataloging/exemplar', tags=['Cataloguing Exemplar'])
 

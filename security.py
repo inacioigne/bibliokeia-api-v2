@@ -4,3 +4,4 @@ import os
 
 SECRET_KEY = os.getenv('SECRET_KEY', 'sadasddsadsasad')
 JWT_ALGORITHM = os.getenv('JWT_ALGORITHM', 'HS512')
+
