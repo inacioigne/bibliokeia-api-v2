@@ -1,5 +1,6 @@
 from pydantic import BaseModel
-from typing import Dict
+from typing import Dict, List
+
 
 class Marc_Bibliographic(BaseModel):
     leader: str
@@ -9,3 +10,6 @@ class Marc_Bibliographic(BaseModel):
 class Field_Marc(BaseModel):
     tag: str
     subfields: Dict
+
+class Items_Model(BaseModel):
+    items: List[Marc_Bibliographic]

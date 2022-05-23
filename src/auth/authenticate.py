@@ -15,8 +15,9 @@ def verify_password(plain_password, hashed_password):
 def get_password_hash(password):
     return pwd_context.hash(password)
 
-def authenticate_user(username: str, password: str):
-    user = session.query(User).filter_by(name = username).first()
+def authenticate_user(email: str, password: str):
+
+    user = session.query(User).filter_by(email = email).first()
     
     if not user:
         return False

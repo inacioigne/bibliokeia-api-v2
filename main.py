@@ -12,6 +12,7 @@ from src.routes.users import login
 from src.routes.users import users
 from src.routes.cataloguing import items
 from src.routes.cataloguing import exemplar
+from src.routes.search import acervo
 from security import SECRET_KEY, JWT_ALGORITHM
 
 
@@ -47,6 +48,7 @@ app.include_router(login.router, tags=['Login'])
 app.include_router(users.router, prefix='/user', tags=['Users'])
 app.include_router(items.router, prefix='/cataloging/item', tags=['Cataloguing Item'])
 app.include_router(exemplar.router, prefix='/cataloging/exemplar', tags=['Cataloguing Exemplar'])
+app.include_router(acervo.router, prefix='/acervo/item', tags=['Acervo'])
 
 if __name__ == "__main__":
     uvicorn.run("main:app", host="0.0.0.0", port=8000, reload=True)

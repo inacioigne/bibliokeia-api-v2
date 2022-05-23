@@ -1,5 +1,5 @@
 from fastapi import APIRouter, Depends, HTTPException
-from src.schemas.request.item import Marc_Bibliographic, Field_Marc
+from src.schemas.items.item import Marc_Bibliographic, Field_Marc
 from src.schemas.users.user_schema import User_Response
 from src.auth.current_user import get_current_user
 from src.db.models import Item
