@@ -11,5 +11,9 @@ class Field_Marc(BaseModel):
     tag: str
     subfields: Dict
 
+class Item_Model(BaseModel):
+    id: int
+    marc: Marc_Bibliographic
+
 class Items_Model(BaseModel):
-    items: List[Marc_Bibliographic]
+    items: List[Item_Model]

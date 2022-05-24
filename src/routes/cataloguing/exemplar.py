@@ -103,9 +103,12 @@ async def delete_exemplar(
     
 
 #RETORNO O PROXIMO EXEMPLAR
-@router.get('/last_exemplar/')
-async def get_last_exemplar():
+@router.get('/next_exemplar/')
+async def get_next_exemplar():
     ex = session.query(Exemplar).order_by(Exemplar.id.desc()).first()
+    if ex == None:
+        return {'exemplar': str(date.today().year)[2:]+'-0001'}
+
         
     lastEx = str(ex).split("-")
     lastYear = lastEx[0]
