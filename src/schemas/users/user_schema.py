@@ -14,6 +14,16 @@ class User_Request(BaseModel):
 class UserCreateRequest(BaseModel):
     name: str
     email: str
+    addressCep: str
+    addressCity: str
+    addressDistrict: str
+    addressNumber: str
+    addressStreet: str
+    birth: str
+    cellphone: str
+    sex: str
+    surname: str
+    vinculo: str
     hash_password: str = Field(alias='password')
 
     @validator('hash_password', pre=True)
