@@ -1,5 +1,7 @@
 from src.db.init_db import session
-from src.db.models import Item, Exemplar
+from src.db.models import User
+
+user_id = 7
 
 
-ex = session.query(Exemplar).order_by(Exemplar.id.desc()).first()
+user = session.query(User).filter_by(id = user_id).first()

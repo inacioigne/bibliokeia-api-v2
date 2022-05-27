@@ -5,6 +5,16 @@ class User_Response(BaseModel):
     id: int
     name: str
     email: str
+    addressCep: str
+    addressCity: str
+    addressDistrict: str
+    addressNumber: str
+    addressStreet: str
+    birth: str
+    cellphone: str
+    sex: str
+    surname: str
+    vinculo: str
 
 class User_Request(BaseModel):
     name: str
