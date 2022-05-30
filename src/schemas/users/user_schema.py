@@ -1,5 +1,6 @@
 from pydantic import BaseModel, Field, validator
 from src.auth.authenticate import get_password_hash
+from typing import Optional
 
 class User_Response(BaseModel):
     id: int
@@ -15,6 +16,10 @@ class User_Response(BaseModel):
     sex: str
     surname: str
     vinculo: str
+    img: Optional[str]
+
+
+
 
 class User_Request(BaseModel):
     name: str
