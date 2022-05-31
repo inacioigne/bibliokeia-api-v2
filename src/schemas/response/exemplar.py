@@ -17,3 +17,7 @@ class Exe_Schema(BaseModel):
 
 class Response_Exemplares(BaseModel):
   exemplares: List[Exe_Schema]
+
+
+
+  

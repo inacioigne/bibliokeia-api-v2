@@ -17,3 +17,6 @@ class Item_Model(BaseModel):
 
 class Items_Model(BaseModel):
     items: List[Item_Model]
+
+class Items_By_Exemplar(BaseModel):
+    title: str

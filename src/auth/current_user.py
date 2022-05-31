@@ -5,7 +5,7 @@ from security import SECRET_KEY, JWT_ALGORITHM
 from src.schemas.token import TokenData
 from src.db.init_db import session
 from src.db.models import User
-from src.schemas.users.user_schema import User_Response
+from src.schemas.users.user_schema import Simple_User
 
 oauth2_scheme = OAuth2PasswordBearer(tokenUrl="token")
 
@@ -13,7 +13,7 @@ oauth2_scheme = OAuth2PasswordBearer(tokenUrl="token")
 def get_user(username: str):
     user = session.query(User).filter_by(name = username).first()
     if user:   
-        return User_Response(**user.json())
+        return Simple_User(**user.json())
 
 async def get_current_user(token: str = Depends(oauth2_scheme)):
     
@@ -40,7 +40,7 @@ async def get_current_user(token: str = Depends(oauth2_scheme)):
         raise credentials_exception
     return user
 
-async def get_current_active_user(current_user: User_Response = Depends(get_current_user)):
+async def get_current_active_user(current_user: Simple_User = Depends(get_current_user)):
     # if current_user.disabled:
     #     raise HTTPException(status_code=400, detail="Inactive user")
     return current_user

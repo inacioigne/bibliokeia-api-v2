@@ -18,7 +18,9 @@ class User_Response(BaseModel):
     vinculo: str
     img: Optional[str]
 
-
+class Simple_User(BaseModel):
+    id: int
+    name: str
 
 
 class User_Request(BaseModel):

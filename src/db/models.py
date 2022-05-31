@@ -4,7 +4,7 @@ from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy import Column, Integer, String, Date, LargeBinary, ForeignKey, true
 from sqlalchemy.dialects.mysql import YEAR, JSON
 from sqlalchemy.orm import relationship
-from datetime import datetime
+from datetime import datetime, timedelta
 #import json
 
 Base = declarative_base() 
@@ -89,6 +89,7 @@ class Exemplar(Base):
     __tablename__ = 'exemplar'
     id = Column(Integer, primary_key=True)
     item_id = Column(Integer, ForeignKey('item.id'))
+    loan_id = Column(Integer, ForeignKey('loan.id'))
     
     library = Column(String(30))
     shelf = Column(String(30))
@@ -102,6 +103,7 @@ class Exemplar(Base):
     #user
 
     item = relationship("Item", back_populates="exemplares")
+    loan = relationship("Loan", back_populates="exemplares")
 
     def __repr__(self):
         return self.number
@@ -126,10 +128,23 @@ class User(Base):
     hash_password = Column(String(255))
     created_at = Column(Date, default=datetime.now())
 
+    #relationship
+    loan = relationship("Loan", back_populates="user")
+
     def json(self):
         return {'id': self.id, 'name': self.name, "email": self.email}
 
     def __repr__(self):
         
         return f"id:{self.id!r}, name:{self.name!r}, email:{self.email!r}"
-       
+
+
+class Loan(Base):
+    __tablename__ = 'loan'
+    id = Column(Integer, primary_key=True)
+    user_id = Column(Integer, ForeignKey('user.id'))
+    created_at = Column(Date, default=datetime.now())
+    due = Column(Date, default=datetime.now()+timedelta(days = 7))
+
+    user = relationship("User", back_populates="loan")
+    exemplares = relationship("Exemplar", back_populates="loan")
