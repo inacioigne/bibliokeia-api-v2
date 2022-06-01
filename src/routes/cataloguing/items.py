@@ -26,7 +26,7 @@ async def create_item(
     item = Item(title = title, marc = request.dict(), logs = log)   
 
     session.add(item)
-    session.commit()
+    session.commit() 
 
     return {'item_id': item.id, 'marc': item.marc}
 

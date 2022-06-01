@@ -23,4 +23,4 @@ async def get_item_by_exemplar(register: str,):
     if ex is None:
         raise HTTPException(status_code=404, detail="Exemplar not found")
         
-    return Items_By_Exemplar(title=ex.item.title)
+    return Items_By_Exemplar(title=ex.item.title, exemplar=register)

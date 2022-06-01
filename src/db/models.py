@@ -1,4 +1,5 @@
 #from ast import For
+from email.policy import default
 from enum import unique
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy import Column, Integer, String, Date, LargeBinary, ForeignKey, true
@@ -145,6 +146,9 @@ class Loan(Base):
     user_id = Column(Integer, ForeignKey('user.id'))
     created_at = Column(Date, default=datetime.now())
     due = Column(Date, default=datetime.now()+timedelta(days = 7))
+    status = Column(String(100), default="Emprestado")
+    log = Column(JSON)
+
 
     user = relationship("User", back_populates="loan")
     exemplares = relationship("Exemplar", back_populates="loan")

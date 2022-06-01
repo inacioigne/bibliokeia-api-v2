@@ -20,3 +20,5 @@ class Items_Model(BaseModel):
 
 class Items_By_Exemplar(BaseModel):
     title: str
+    exemplar: str
+

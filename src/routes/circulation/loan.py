@@ -14,10 +14,12 @@ async def loan(
     request: List,
     current_user: Simple_User = Depends(get_current_user)):
 
+    log =  {'creator': {'id': current_user.id, 'name': current_user.name }}
+
     user = session.query(User).filter_by(id = user_id).first()
     if user is None:
         raise HTTPException(status_code=404, detail="User not found")
-    loan = Loan()
+    loan = Loan(log=log)
     user.loan.append(loan)
     for register in request:
         ex = session.query(Exemplar).filter_by(number = register).first()
@@ -25,7 +27,7 @@ async def loan(
             raise HTTPException(status_code=404, detail="Exemplar not found")
         loan.exemplares.append(ex)
     session.add(user)
-    session.commit()
+    session.commit() 
 
     return {'msg': 'Emprestimos realzados com sucesso'}
 
