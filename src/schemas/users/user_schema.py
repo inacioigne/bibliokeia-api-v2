@@ -6,16 +6,16 @@ class User_Response(BaseModel):
     id: int
     name: str
     email: str
-    addressCep: str
-    addressCity: str
-    addressDistrict: str
-    addressNumber: str
-    addressStreet: str
-    birth: str
-    cellphone: str
-    sex: str
-    surname: str
-    vinculo: str
+    addressCep: Optional[str]
+    addressCity: Optional[str]
+    addressDistrict: Optional[str]
+    addressNumber: Optional[str]
+    addressStreet: Optional[str]
+    birth: Optional[str]
+    cellphone: Optional[str]
+    sex: Optional[str]
+    surname: Optional[str]
+    vinculo: Optional[str]
     img: Optional[str]
 
 class Simple_User(BaseModel):
@@ -31,16 +31,16 @@ class User_Request(BaseModel):
 class UserCreateRequest(BaseModel):
     name: str
     email: str
-    addressCep: str
-    addressCity: str
-    addressDistrict: str
-    addressNumber: str
-    addressStreet: str
-    birth: str
-    cellphone: str
-    sex: str
-    surname: str
-    vinculo: str
+    addressCep: Optional[str]
+    addressCity: Optional[str]
+    addressDistrict: Optional[str]
+    addressNumber: Optional[str]
+    addressStreet: Optional[str]
+    birth: Optional[str]
+    cellphone: Optional[str]
+    sex: Optional[str]
+    surname: Optional[str]
+    vinculo: Optional[str]
     hash_password: str = Field(alias='password')
 
     @validator('hash_password', pre=True)

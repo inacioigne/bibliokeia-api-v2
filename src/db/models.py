@@ -90,7 +90,6 @@ class Exemplar(Base):
     __tablename__ = 'exemplar'
     id = Column(Integer, primary_key=True)
     item_id = Column(Integer, ForeignKey('item.id'))
-    loan_id = Column(Integer, ForeignKey('loan.id'))
     
     library = Column(String(30))
     shelf = Column(String(30))
@@ -104,7 +103,7 @@ class Exemplar(Base):
     #user
 
     item = relationship("Item", back_populates="exemplares")
-    loan = relationship("Loan", back_populates="exemplares")
+    loan = relationship("Loan", back_populates="exemplar")
 
     def __repr__(self):
         return self.number
@@ -144,6 +143,7 @@ class Loan(Base):
     __tablename__ = 'loan'
     id = Column(Integer, primary_key=True)
     user_id = Column(Integer, ForeignKey('user.id'))
+    exemplar_id = Column(Integer, ForeignKey('exemplar.id'))
     created_at = Column(Date, default=datetime.now())
     due = Column(Date, default=datetime.now()+timedelta(days = 7))
     status = Column(String(100), default="Emprestado")
@@ -151,4 +151,4 @@ class Loan(Base):
 
 
     user = relationship("User", back_populates="loan")
-    exemplares = relationship("Exemplar", back_populates="loan")
+    exemplar = relationship("Exemplar", back_populates="loan")
