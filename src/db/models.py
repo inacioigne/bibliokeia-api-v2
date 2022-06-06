@@ -10,7 +10,22 @@ from datetime import datetime, timedelta
 
 Base = declarative_base() 
 
-class Authorship(Base):
+class Access_Points(Base):
+    __tablename__ = 'access_points'
+    id = Column(Integer, primary_key=True)
+    authority_id = Column(Integer, ForeignKey('authority.id'))
+    item_id = Column(Integer, ForeignKey('item.id'))
+    relation = Column(String(length=100))
+
+    authority = relationship("Authority", back_populates="access_points")
+    item = relationship("Item", back_populates="access_points")
+
+    def __repr__(self):
+        return self.relation
+
+
+
+""" class Authorship(Base):
     __tablename__ = 'authorship'
     id = Column(Integer, primary_key=True)
     authority_id = Column(Integer, ForeignKey('authority.id'))
@@ -22,9 +37,9 @@ class Authorship(Base):
     item = relationship("Item", back_populates="authorship")
 
     def __repr__(self):
-        return self.relation
+        return self.relation """
     
-class Item_Subject(Base):
+""" class Item_Subject(Base):
     __tablename__ = 'item_subject'
     id = Column(Integer, primary_key=True)
     authority_id = Column(Integer, ForeignKey('authority.id'))
@@ -38,7 +53,7 @@ class Item_Subject(Base):
 
     def __repr__(self):
         return self.relation
-
+ """
 class Item(Base):
     __tablename__ = 'item'
     id = Column(Integer, primary_key=True)
@@ -49,8 +64,9 @@ class Item(Base):
     
 
     #relationship
-    authorship = relationship("Authorship", back_populates="item")
-    item_subject = relationship("Item_Subject", back_populates="item")
+    #authorship = relationship("Authorship", back_populates="item")
+    #item_subject = relationship("Item_Subject", back_populates="item")
+    access_points = relationship("Access_Points", back_populates="item")
     exemplares = relationship("Exemplar", back_populates="item")
 
     def __repr__(self):
@@ -60,18 +76,22 @@ class Authority(Base):
     __tablename__ = 'authority'
     id = Column(Integer, primary_key=True)
     name = Column(String(length=255))
-    format = Column(String(length=100), default='marcxml')
-    schema = Column(String(length=100), default='marc21')
-    marc_record = Column(LargeBinary)
+    #format = Column(String(length=100), default='marcxml')
+    #schema = Column(String(length=100), default='marc21')
+    #marc_record = Column(LargeBinary)
+    marc = Column(JSON)
+    type = Column(String(length=255))
+    log = Column(JSON)
     created_at = Column(Date, default=datetime.now())
 
-    authorship = relationship("Authorship", back_populates="authority")
-    item_subject = relationship("Item_Subject", back_populates="authority")
+    #authorship = relationship("Authorship", back_populates="authority")
+    #item_subject = relationship("Item_Subject", back_populates="authority")
+    access_points = relationship("Access_Points", back_populates="authority")
 
     def __repr__(self):
         return self.name
 
-class Subject(Base):
+""" class Subject(Base):
     __tablename__ = 'subject'
     id = Column(Integer, primary_key=True)
     name = Column(String(length=255))
@@ -85,7 +105,7 @@ class Subject(Base):
 
     def __repr__(self):
         return self.name
-
+ """
 class Exemplar(Base):
     __tablename__ = 'exemplar'
     id = Column(Integer, primary_key=True)
