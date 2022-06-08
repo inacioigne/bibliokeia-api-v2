@@ -48,8 +48,6 @@ class Authority(Base):
 
     access_points = relationship("Access_Points", back_populates="authority")
 
-    def __repr__(self):
-        return self.id
 
 
 class Exemplar(Base):
