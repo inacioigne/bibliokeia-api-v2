@@ -1,0 +1,16 @@
+000 00537cz  a2200193o  4500
+001 000135560
+003 Br
+005 20130807095336.7
+008 970501 | anznnbabn          |a ana     d
+035 __ |a 98041718393371E20        
+040 __ |a Br |c Br |f Br
+151 __ |a Amazônia
+451 __ |a Amazonas, Rio, Região
+451 __ |a Amazônia Legal
+451 __ |a Região do rio Amazonas
+670 __ |a AACR2
+670 __ |a Dicionário geográfico brasileiro
+670 __ |a Webster's geographical dictionary
+670 __ |a Viveiros, Lucia. Simpósio Nacional ...1981.
+913 __ |a 101011612195902146

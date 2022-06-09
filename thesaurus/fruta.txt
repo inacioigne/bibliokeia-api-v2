@@ -1,0 +1,15 @@
+000 00392cz  a2200181o  4500
+001 000075872
+003 Br
+005 20201011164035.0
+008 050912d| anannbabn           a ana     d
+035 __ |a 2005091209424851med
+040 __ |a Br |c Br |f Br
+150 __ |a Maçã
+450 __ |a Apple
+450 __ |a Apple tree
+450 __ |a Malus
+550 __ |w g |a Rosácea (Botânica)
+550 __ |w n |a Culinária (Maçã)
+670 __ |a LCSH
+750 _0 |a Apples

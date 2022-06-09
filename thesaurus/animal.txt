@@ -1,0 +1,15 @@
+000 00395cz  a2200181o  4500
+001 000013403
+003 Br
+005 20161123141512.0
+008 000602d| anznnbabn          |a ana     d
+035 __ |a 100060211172700147
+040 __ |a Br |c Br |f Br
+150 __ |a Macacos
+450 __ |a Haplorhim
+450 __ |a Símio
+550 __ |a Macaco-de-cheiro |w h
+550 __ |a Primatas |w g
+670 __ |a LCSH
+750 _0 |a Monkeys
+913 __ |a 101011612481896146

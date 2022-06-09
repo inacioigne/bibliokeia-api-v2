@@ -1,5 +1,5 @@
 {
-    "leader": "00395cz  a2200181o  4500",
+    "leader": "00366nz  a2200169o  4500",
     "datafields": {
         "040": {
             "indicators": {
@@ -7,8 +7,8 @@
                 "Ind2": "_"
             },
             "subfields": {
-                "a": "Br",
-                "c": "Br",
+                "a": "Br ",
+                "c": "Br ",
                 "f": "Br"
             }
         },
@@ -18,7 +18,7 @@
                 "Ind2": "_"
             },
             "subfields": {
-                "a": "Macacos"
+                "a": "Goiaba"
             }
         },
         "450": [
@@ -28,7 +28,7 @@
                     "Ind2": "_"
                 },
                 "subfields": {
-                    "a": "Haplorhim"
+                    "a": "Apple guava"
                 }
             },
             {
@@ -37,19 +37,7 @@
                     "Ind2": "_"
                 },
                 "subfields": {
-                    "a": "Símio"
-                }
-            }
-        ],
-        "550": [
-            {
-                "indicators": {
-                    "Ind1": "_",
-                    "Ind2": "_"
-                },
-                "subfields": {
-                    "a": "Macaco-de-cheiro",
-                    "w": "h"
+                    "a": "Common guava"
                 }
             },
             {
@@ -58,8 +46,16 @@
                     "Ind2": "_"
                 },
                 "subfields": {
-                    "a": "Primatas",
-                    "w": "g"
+                    "a": "Psidium guajava"
+                }
+            },
+            {
+                "indicators": {
+                    "Ind1": "_",
+                    "Ind2": "_"
+                },
+                "subfields": {
+                    "a": "Yellow guava"
                 }
             }
         ],
@@ -78,20 +74,11 @@
                 "Ind2": "0"
             },
             "subfields": {
-                "a": "Monkeys"
-            }
-        },
-        "913": {
-            "indicators": {
-                "Ind1": "_",
-                "Ind2": "_"
-            },
-            "subfields": {
-                "a": "101011612481896146"
+                "a": "Guava"
             }
         }
     },
     "controlfields": {
-        "008": "000602d| anznnbabn          |a ana     d"
+        "008": "040701d| anznnbabn           a ana     d"
     }
 }

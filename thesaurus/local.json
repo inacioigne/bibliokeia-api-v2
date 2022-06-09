@@ -1,5 +1,5 @@
 {
-    "leader": "00395cz  a2200181o  4500",
+    "leader": "00537cz  a2200193o  4500",
     "datafields": {
         "040": {
             "indicators": {
@@ -12,23 +12,23 @@
                 "f": "Br"
             }
         },
-        "150": {
+        "151": {
             "indicators": {
                 "Ind1": "_",
                 "Ind2": "_"
             },
             "subfields": {
-                "a": "Macacos"
+                "a": "Amazônia"
             }
         },
-        "450": [
+        "451": [
             {
                 "indicators": {
                     "Ind1": "_",
                     "Ind2": "_"
                 },
                 "subfields": {
-                    "a": "Haplorhim"
+                    "a": "Amazonas, Rio, Região"
                 }
             },
             {
@@ -37,19 +37,27 @@
                     "Ind2": "_"
                 },
                 "subfields": {
-                    "a": "Símio"
+                    "a": "Amazônia Legal"
+                }
+            },
+            {
+                "indicators": {
+                    "Ind1": "_",
+                    "Ind2": "_"
+                },
+                "subfields": {
+                    "a": "Região do rio Amazonas"
                 }
             }
         ],
-        "550": [
+        "670": [
             {
                 "indicators": {
                     "Ind1": "_",
                     "Ind2": "_"
                 },
                 "subfields": {
-                    "a": "Macaco-de-cheiro",
-                    "w": "h"
+                    "a": "AACR2"
                 }
             },
             {
@@ -58,40 +66,30 @@
                     "Ind2": "_"
                 },
                 "subfields": {
-                    "a": "Primatas",
-                    "w": "g"
+                    "a": "Dicionário geográfico brasileiro"
+                }
+            },
+            {
+                "indicators": {
+                    "Ind1": "_",
+                    "Ind2": "_"
+                },
+                "subfields": {
+                    "a": "Webster's geographical dictionary"
+                }
+            },
+            {
+                "indicators": {
+                    "Ind1": "_",
+                    "Ind2": "_"
+                },
+                "subfields": {
+                    "a": "Viveiros, Lucia. Simpósio Nacional ...1981."
                 }
             }
-        ],
-        "670": {
-            "indicators": {
-                "Ind1": "_",
-                "Ind2": "_"
-            },
-            "subfields": {
-                "a": "LCSH"
-            }
-        },
-        "750": {
-            "indicators": {
-                "Ind1": "_",
-                "Ind2": "0"
-            },
-            "subfields": {
-                "a": "Monkeys"
-            }
-        },
-        "913": {
-            "indicators": {
-                "Ind1": "_",
-                "Ind2": "_"
-            },
-            "subfields": {
-                "a": "101011612481896146"
-            }
-        }
+        ]
     },
     "controlfields": {
-        "008": "000602d| anznnbabn          |a ana     d"
+        "008": "970501 | anznnbabn          |a ana     d"
     }
 }

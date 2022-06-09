@@ -1,5 +1,5 @@
 {
-    "leader": "00809cz  a2200181o  4500",
+    "leader": "00544nz  a2200181o  4500",
     "datafields": {
         "040": {
             "indicators": {
@@ -7,39 +7,28 @@
                 "Ind2": "_"
             },
             "subfields": {
-                "a": "BR-RjBN",
+                "a": "Br",
+                "c": "Br",
                 "b": "por"
             }
         },
-        "100": {
+        "110": {
             "indicators": {
-                "Ind1": "1",
+                "Ind1": "2",
                 "Ind2": "_"
             },
             "subfields": {
-                "a": "Moraes, Vinicius de,",
-                "d": "1913-1980"
+                "a": "Instituto Nacional de Pesquisas da Amazônia (Brasil)"
             }
         },
-        "400": [
+        "410": [
             {
                 "indicators": {
                     "Ind1": "1",
                     "Ind2": "_"
                 },
                 "subfields": {
-                    "a": "Moraes, Marcus Vinicius da Cruz de Mello",
-                    "d": "1913-1980"
-                }
-            },
-            {
-                "indicators": {
-                    "Ind1": "1",
-                    "Ind2": "_"
-                },
-                "subfields": {
-                    "a": "Mello Moraes, Marcus Vinicius da Cruz de",
-                    "d": "1913-1980"
+                    "a": "INPA"
                 }
             }
         ],
@@ -50,7 +39,7 @@
                     "Ind2": "_"
                 },
                 "subfields": {
-                    "a": "Autor de: A arca de Noé. 1999."
+                    "a": "Autor de: Alexandre Rodrigues Ferreira... 1958."
                 }
             },
             {
@@ -59,8 +48,7 @@
                     "Ind2": "_"
                 },
                 "subfields": {
-                    "a": "LC Authorities  29/9/09",
-                    "b": "(D. ; rems. ; poeta, compositor, dramaturgo, jornalista, diplomata)"
+                    "a": "Siglas bras. IBICT"
                 }
             },
             {
@@ -69,7 +57,7 @@
                     "Ind2": "_"
                 },
                 "subfields": {
-                    "a": "http://www.viniciusdemoraes.com.br/"
+                    "a": "Siglas ent. bras."
                 }
             },
             {
@@ -78,8 +66,7 @@
                     "Ind2": "_"
                 },
                 "subfields": {
-                    "a": "http://pt.wikipedia.org/wiki/Vinicius_de_Moraes",
-                    "b": "(Vinicius de Moraes nasceu no Rio de Janeiro, em 19 de outubro de 1913 e faleceu no dia 9 de julho de 1980. Foi um diplomata, dramaturgo, jornalista, poeta e compositor brasileiro)"
+                    "a": "Cat. tel. Amazonas"
                 }
             },
             {
@@ -88,13 +75,22 @@
                     "Ind2": "_"
                 },
                 "subfields": {
-                    "a": "https://catalogue.bnf.fr/ark:/12148/cb13897679f  18/02/2021",
-                    "b": "(D. ; poeta, letrista e cantor de bossa nova)"
+                    "a": "Sec. de: Biodiversidade do Médio Madeira ... 2007."
+                }
+            },
+            {
+                "indicators": {
+                    "Ind1": "_",
+                    "Ind2": "_"
+                },
+                "subfields": {
+                    "a": "http://portal.inpa.gov.br/index.php/institucional  10/10/2017",
+                    "b": "(criado em 1952 e implementado em 1954 - o Instituto Nacional de Pesquisas da Amazônia (INPA) - ao longo dos anos, vem realizando estudos científicos do meio físico e das condições de vida da região amazônica para promover o bem-estar humano e o desenvolvimento sócio-econômico regional. Atualmente, o INPA é referência mundial em Biologia Tropical)"
                 }
             }
         ]
     },
     "controlfields": {
-        "008": "980316   acnnnab n           a aaa      "
+        "008": "980821|| acnnnaab|          |a aaa     d"
     }
 }

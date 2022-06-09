@@ -1,0 +1,17 @@
+000 00544nz  a2200181o  4500
+001 000578774
+003 Br
+005 20171017113319.0
+008 980821|| acnnnaab|          |a aaa     d
+011 __ |s 98082117221437E16
+035 __ |a 98082117221437E16
+040 __ |a Br |c Br |b por
+110 2_ |a Instituto Nacional de Pesquisas da Amazônia (Brasil)
+410 1_ |a INPA
+670 __ |a Autor de: Alexandre Rodrigues Ferreira... 1958.
+670 __ |a Siglas bras. IBICT
+670 __ |a Siglas ent. bras.
+670 __ |a Cat. tel. Amazonas
+670 __ |a Sec. de: Biodiversidade do Médio Madeira ... 2007.
+670 __ |a http://portal.inpa.gov.br/index.php/institucional  10/10/2017 |b (criado em 1952 e implementado em 1954 - o Instituto Nacional de Pesquisas da Amazônia (INPA) - ao longo dos anos, vem realizando estudos científicos do meio físico e das condições de vida da região amazônica para promover o bem-estar humano e o desenvolvimento sócio-econômico regional. Atualmente, o INPA é referência mundial em Biologia Tropical)
+913 __ |a 101060420414483167
