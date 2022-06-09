@@ -1,0 +1,14 @@
+000 00366nz  a2200169o  4500
+001 000069687
+003 Br
+005 20170307112353.0
+008 040701d| anznnbabn           a ana     d
+035 __ |a 2004070111352534med
+040 __ |a Br |c Br |f Br
+150 __ |a Goiaba
+450 __ |a Apple guava
+450 __ |a Common guava
+450 __ |a Psidium guajava
+450 __ |a Yellow guava
+670 __ |a LCSH
+750 _0 |a Guava

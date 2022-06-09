@@ -1,0 +1,20 @@
+000 01060cz  a2200205o  4500
+001 000558180
+003 BR-RjBN
+005 20210317184317.0
+008 970715   acnnnab n           a aaa      
+011 __ |s 97070710241534001
+024 7_ |a http://viaf.org/viaf/95151633 |2 VIAF
+024 7_ |a http://id.loc.gov/authorities/names/n80002329 |2 LCCN
+035 __ |a 97070710241534001        
+040 __ |a BR-RjBN |b por
+100 1_ |a Assis, Machado de, |d 1839-1908
+400 1_ |a Machado de Assis |d 1839-1908
+400 1_ |a Assis, Joaquim Maria Machado de |d 1839-1908
+400 1_ |a Machado de Assis, Joaquim Maria |d 1839-1908
+670 __ |a Autor de: Quincas Borba. 1899.
+670 __ |a Seu: La alienisto. 1997 |b (orelha: nasceu no Rio de Janeiro; jornalista, contista, cronista, romancista, poeta e teatrólogo)
+670 __ |a LC Authorities  13/11/09 |b (Machado de Assis; D.)
+670 __ |a http://www.academia.org.br/machado.htm |b (d.n.: 21/6/1839; d.m.: 29/9/1908)
+670 __ |a http://pt.wikipedia.org/wiki/Machado_de_Assis |b (Joaquim Maria Machado de Assis nasceu no Rio de Janeiro, em 21 de junho de 1839 e faleceu no dia 29 de setembro de 1908. Foi um poeta, romancista, dramaturgo, contista, jornalista, cronista e teatrólogo brasileiro)
+670 __ |a https://catalogue.bnf.fr/ark:/12148/cb118893083  17/03/2021 |b (D.)

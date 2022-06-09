@@ -1,0 +1,55 @@
+{
+    "leader": "00366nz  a2200169o  4500",
+    "datafields": {
+        "040": {
+            "indicators": {
+                "Ind1": "_",
+                "Ind2": "_"
+            },
+            "subfields": {
+                "a": "Br ",
+                "c": "Br ",
+                "f": "Br"
+            }
+        },
+        "150": {
+            "indicators": {
+                "Ind1": "_",
+                "Ind2": "_"
+            },
+            "subfields": {
+                "a": "Goiaba"
+            }
+        },
+        "450": {
+            "indicators": {
+                "Ind1": "_",
+                "Ind2": "_"
+            },
+            "subfields": {
+                "a": "Yellow guava"
+            }
+        },
+        "670": {
+            "indicators": {
+                "Ind1": "_",
+                "Ind2": "_"
+            },
+            "subfields": {
+                "a": "LCSH"
+            }
+        },
+        "750": {
+            "indicators": {
+                "Ind1": "_",
+                "Ind2": "0"
+            },
+            "subfields": {
+                "a": "Guava"
+            }
+        }
+    },
+    "controlfields": {
+        "008": "040701d| anznnbabn           a ana     d"
+    }
+}
