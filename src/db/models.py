@@ -59,7 +59,7 @@ class Exemplar(Base):
     shelf = Column(String(30))
     callnumber = Column(String(30))
     collection = Column(String(30))
-    number = Column(String(10))
+    number = Column(String(30))
     volume = Column(String(10))
     ex = Column(String(10))
     status = Column(String(30))

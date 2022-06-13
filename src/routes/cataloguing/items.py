@@ -88,16 +88,16 @@ async def put_item(
         raise HTTPException(status_code=404, detail="Item not found")
 
     #Update Logs
-    logs = deepcopy(item.logs)
-    if 'updates' in logs.keys():
-        logs.get('updates').append({
-            'user': {'id': current_user.id, 'name': current_user.name },
-            "date": datetime.now().strftime("%d/%m/%Y %H:%M")})
-    else:
-        logs['updates'] = [{
-            'user': {'id': current_user.id, 'name': current_user.name },
-            "date": datetime.now().strftime("%d/%m/%Y %H:%M")}]
-    item.logs = logs
+    # logs = deepcopy(item.logs)
+    # if 'updates' in logs.keys():
+    #     logs.get('updates').append({
+    #         'user': {'id': current_user.id, 'name': current_user.name },
+    #         "date": datetime.now().strftime("%d/%m/%Y %H:%M")})
+    # else:
+    #     logs['updates'] = [{
+    #         'user': {'id': current_user.id, 'name': current_user.name },
+    #         "date": datetime.now().strftime("%d/%m/%Y %H:%M")}]
+    # item.logs = logs
 
     item.marc = request.dict()
 

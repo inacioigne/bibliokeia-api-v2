@@ -104,15 +104,6 @@
                     }
                 }
             ],
-            "942": {
-                "indicators": {
-                    "Ind1": " ",
-                    "Ind2": " "
-                },
-                "subfields": {
-                    "c": "L"
-                }
-            },
             "952": [
                 {
                     "indicators": {
@@ -147,6 +138,15 @@
                 "subfields": {
                     "a": "Obras gerais",
                     "c": "E1.P1"
+                }
+            },
+            "900": {
+                "indicators": {
+                    "Ind1": "_",
+                    "Ind2": "_"
+                },
+                "subfields": {
+                    "a": "Livro"
                 }
             }
         }
@@ -227,15 +227,6 @@
                     }
                 }
             ],
-            "942": {
-                "indicators": {
-                    "Ind1": " ",
-                    "Ind2": " "
-                },
-                "subfields": {
-                    "c": "L"
-                }
-            },
             "952": [
                 {
                     "indicators": {
@@ -270,6 +261,15 @@
                 "subfields": {
                     "a": "Obras gerais",
                     "c": "E1.P1"
+                }
+            },
+            "900": {
+                "indicators": {
+                    "Ind1": "_",
+                    "Ind2": "_"
+                },
+                "subfields": {
+                    "a": "Livro"
                 }
             }
         }
@@ -353,15 +353,6 @@
                     }
                 }
             ],
-            "942": {
-                "indicators": {
-                    "Ind1": " ",
-                    "Ind2": " "
-                },
-                "subfields": {
-                    "c": "L"
-                }
-            },
             "952": [
                 {
                     "indicators": {
@@ -396,6 +387,15 @@
                 "subfields": {
                     "a": "Obras gerais",
                     "c": "E1.P1"
+                }
+            },
+            "900": {
+                "indicators": {
+                    "Ind1": "_",
+                    "Ind2": "_"
+                },
+                "subfields": {
+                    "a": "Livro"
                 }
             }
         }
@@ -506,15 +506,6 @@
                     }
                 }
             ],
-            "942": {
-                "indicators": {
-                    "Ind1": " ",
-                    "Ind2": " "
-                },
-                "subfields": {
-                    "c": "L"
-                }
-            },
             "952": [
                 {
                     "indicators": {
@@ -549,6 +540,15 @@
                 "subfields": {
                     "a": "Obras gerais",
                     "c": "E1.P1"
+                }
+            },
+            "900": {
+                "indicators": {
+                    "Ind1": "_",
+                    "Ind2": "_"
+                },
+                "subfields": {
+                    "a": "Livro"
                 }
             }
         }
@@ -678,15 +678,6 @@
                     }
                 }
             ],
-            "942": {
-                "indicators": {
-                    "Ind1": " ",
-                    "Ind2": " "
-                },
-                "subfields": {
-                    "c": "L"
-                }
-            },
             "952": [
                 {
                     "indicators": {
@@ -796,6 +787,15 @@
                 "subfields": {
                     "a": "Obras gerais",
                     "c": "E1.P1"
+                }
+            },
+            "900": {
+                "indicators": {
+                    "Ind1": "_",
+                    "Ind2": "_"
+                },
+                "subfields": {
+                    "a": "Livro"
                 }
             }
         }
@@ -917,15 +917,6 @@
                     }
                 }
             ],
-            "942": {
-                "indicators": {
-                    "Ind1": " ",
-                    "Ind2": " "
-                },
-                "subfields": {
-                    "c": "L"
-                }
-            },
             "952": [
                 {
                     "indicators": {
@@ -961,6 +952,15 @@
                 "subfields": {
                     "a": "Obras gerais",
                     "c": "E1.P1"
+                }
+            },
+            "900": {
+                "indicators": {
+                    "Ind1": "_",
+                    "Ind2": "_"
+                },
+                "subfields": {
+                    "a": "Livro"
                 }
             }
         }
@@ -1092,15 +1092,6 @@
                     }
                 }
             ],
-            "942": {
-                "indicators": {
-                    "Ind1": " ",
-                    "Ind2": " "
-                },
-                "subfields": {
-                    "c": "L"
-                }
-            },
             "952": [
                 {
                     "indicators": {
@@ -1136,6 +1127,15 @@
                 "subfields": {
                     "a": "Obras gerais",
                     "c": "E1.P1"
+                }
+            },
+            "900": {
+                "indicators": {
+                    "Ind1": "_",
+                    "Ind2": "_"
+                },
+                "subfields": {
+                    "a": "Livro"
                 }
             }
         }
@@ -1220,15 +1220,6 @@
                     }
                 }
             ],
-            "942": {
-                "indicators": {
-                    "Ind1": " ",
-                    "Ind2": " "
-                },
-                "subfields": {
-                    "c": "L"
-                }
-            },
             "952": [
                 {
                     "indicators": {
@@ -1264,6 +1255,15 @@
                 "subfields": {
                     "a": "Obras gerais",
                     "c": "E1.P1"
+                }
+            },
+            "900": {
+                "indicators": {
+                    "Ind1": "_",
+                    "Ind2": "_"
+                },
+                "subfields": {
+                    "a": "Livro"
                 }
             }
         }
@@ -1404,15 +1404,6 @@
                     }
                 }
             ],
-            "942": {
-                "indicators": {
-                    "Ind1": " ",
-                    "Ind2": " "
-                },
-                "subfields": {
-                    "c": "L"
-                }
-            },
             "952": [
                 {
                     "indicators": {
@@ -1447,6 +1438,15 @@
                 "subfields": {
                     "a": "Obras gerais",
                     "c": "E1.P1"
+                }
+            },
+            "900": {
+                "indicators": {
+                    "Ind1": "_",
+                    "Ind2": "_"
+                },
+                "subfields": {
+                    "a": "Livro"
                 }
             }
         }
@@ -1539,15 +1539,6 @@
                     }
                 }
             ],
-            "942": {
-                "indicators": {
-                    "Ind1": " ",
-                    "Ind2": " "
-                },
-                "subfields": {
-                    "c": "L"
-                }
-            },
             "952": [
                 {
                     "indicators": {
@@ -1582,6 +1573,15 @@
                 "subfields": {
                     "a": "Obras gerais",
                     "c": "E1.P1"
+                }
+            },
+            "900": {
+                "indicators": {
+                    "Ind1": "_",
+                    "Ind2": "_"
+                },
+                "subfields": {
+                    "a": "Livro"
                 }
             }
         }
@@ -1687,15 +1687,6 @@
                     }
                 }
             ],
-            "942": {
-                "indicators": {
-                    "Ind1": " ",
-                    "Ind2": " "
-                },
-                "subfields": {
-                    "c": "L"
-                }
-            },
             "952": [
                 {
                     "indicators": {
@@ -1756,6 +1747,15 @@
                 "subfields": {
                     "a": "Obras gerais",
                     "c": "E1.P1"
+                }
+            },
+            "900": {
+                "indicators": {
+                    "Ind1": "_",
+                    "Ind2": "_"
+                },
+                "subfields": {
+                    "a": "Livro"
                 }
             }
         }
@@ -1840,15 +1840,6 @@
                     }
                 }
             ],
-            "942": {
-                "indicators": {
-                    "Ind1": " ",
-                    "Ind2": " "
-                },
-                "subfields": {
-                    "c": "L"
-                }
-            },
             "952": [
                 {
                     "indicators": {
@@ -1883,6 +1874,15 @@
                 "subfields": {
                     "a": "Obras gerais",
                     "c": "E1.P1"
+                }
+            },
+            "900": {
+                "indicators": {
+                    "Ind1": "_",
+                    "Ind2": "_"
+                },
+                "subfields": {
+                    "a": "Livro"
                 }
             }
         }
@@ -1988,15 +1988,6 @@
                     }
                 }
             ],
-            "942": {
-                "indicators": {
-                    "Ind1": " ",
-                    "Ind2": " "
-                },
-                "subfields": {
-                    "c": "L"
-                }
-            },
             "952": [
                 {
                     "indicators": {
@@ -2032,6 +2023,15 @@
                 "subfields": {
                     "a": "Obras gerais",
                     "c": "E1.P1"
+                }
+            },
+            "900": {
+                "indicators": {
+                    "Ind1": "_",
+                    "Ind2": "_"
+                },
+                "subfields": {
+                    "a": "Livro"
                 }
             }
         }
@@ -2150,15 +2150,6 @@
                     }
                 }
             ],
-            "942": {
-                "indicators": {
-                    "Ind1": " ",
-                    "Ind2": " "
-                },
-                "subfields": {
-                    "c": "L"
-                }
-            },
             "952": [
                 {
                     "indicators": {
@@ -2219,6 +2210,15 @@
                 "subfields": {
                     "a": "Obras gerais",
                     "c": "E1.P1"
+                }
+            },
+            "900": {
+                "indicators": {
+                    "Ind1": "_",
+                    "Ind2": "_"
+                },
+                "subfields": {
+                    "a": "Livro"
                 }
             }
         }
@@ -2333,15 +2333,6 @@
                     }
                 }
             ],
-            "942": {
-                "indicators": {
-                    "Ind1": " ",
-                    "Ind2": " "
-                },
-                "subfields": {
-                    "c": "L"
-                }
-            },
             "952": [
                 {
                     "indicators": {
@@ -2377,6 +2368,15 @@
                 "subfields": {
                     "a": "Obras gerais",
                     "c": "E1.P1"
+                }
+            },
+            "900": {
+                "indicators": {
+                    "Ind1": "_",
+                    "Ind2": "_"
+                },
+                "subfields": {
+                    "a": "Livro"
                 }
             }
         }
@@ -2491,15 +2491,6 @@
                     }
                 }
             ],
-            "942": {
-                "indicators": {
-                    "Ind1": " ",
-                    "Ind2": " "
-                },
-                "subfields": {
-                    "c": "L"
-                }
-            },
             "952": [
                 {
                     "indicators": {
@@ -2558,6 +2549,15 @@
                 "subfields": {
                     "a": "Obras gerais",
                     "c": "E1.P1"
+                }
+            },
+            "900": {
+                "indicators": {
+                    "Ind1": "_",
+                    "Ind2": "_"
+                },
+                "subfields": {
+                    "a": "Livro"
                 }
             }
         }
@@ -2663,15 +2663,6 @@
                     }
                 }
             ],
-            "942": {
-                "indicators": {
-                    "Ind1": " ",
-                    "Ind2": " "
-                },
-                "subfields": {
-                    "c": "L"
-                }
-            },
             "952": [
                 {
                     "indicators": {
@@ -2706,6 +2697,15 @@
                 "subfields": {
                     "a": "Obras gerais",
                     "c": "E1.P1"
+                }
+            },
+            "900": {
+                "indicators": {
+                    "Ind1": "_",
+                    "Ind2": "_"
+                },
+                "subfields": {
+                    "a": "Livro"
                 }
             }
         }
@@ -2799,15 +2799,6 @@
                     }
                 }
             ],
-            "942": {
-                "indicators": {
-                    "Ind1": " ",
-                    "Ind2": " "
-                },
-                "subfields": {
-                    "c": "L"
-                }
-            },
             "952": [
                 {
                     "indicators": {
@@ -2843,6 +2834,15 @@
                 "subfields": {
                     "a": "Obras gerais",
                     "c": "E1.P1"
+                }
+            },
+            "900": {
+                "indicators": {
+                    "Ind1": "_",
+                    "Ind2": "_"
+                },
+                "subfields": {
+                    "a": "Livro"
                 }
             }
         }
