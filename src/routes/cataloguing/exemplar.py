@@ -45,7 +45,7 @@ async def create_exemplar(
     item = session.query(Item).filter_by(id = item_id).first()
     exs = request.exemplares
     for ex in exs:
-        print(ex)
+        #print(ex)
         e = Exemplar(
             number = ex.number,
             callnumber = ex.callnumber,

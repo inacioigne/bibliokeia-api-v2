@@ -77,3 +77,11 @@ def tranform_json(marcxml_file):
     return json_list
 
 json_list = tranform_json("import/koha.xml")
+
+
+
+
+
+
+
+
