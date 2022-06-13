@@ -19,7 +19,7 @@ def tranform_json(marcxml_file):
     records = dom.getElementsByTagName('record')
 
     json_list = list()
-    repetiveis = ['650']
+    repetiveis = ['650', "710","700", "952"]
 
     for record in records:
         json_marc = dict()
@@ -35,7 +35,7 @@ def tranform_json(marcxml_file):
         for controfield in controfields:
             tag = controfield.attrib['tag']
             control[tag] = controfield.text
-        json_marc["controfields"] = control
+        json_marc["controlfields"] = control
 
         #DATAFIELDS
         data = dict()             
