@@ -1,4 +1,4 @@
-from fastapi import APIRouter, Depends, HTTPException
+from fastapi import APIRouter, Depends, HTTPException, UploadFile
 from src.schemas.items.item import Marc_Bibliographic, Field_Marc
 from src.schemas.users.user_schema import User_Response
 from src.auth.current_user import get_current_user
@@ -6,6 +6,8 @@ from src.db.models import Item
 from src.db.init_db import session
 from copy import deepcopy
 from datetime import datetime
+import shutil
+from fastapi.responses import FileResponse
 
 router = APIRouter()
 
@@ -102,3 +104,32 @@ async def put_item(
     item.marc = request.dict()
 
     return Marc_Bibliographic(**item.marc)
+
+#Imagems
+@router.post("/{item_id}/imagem", status_code=201)
+async def upload_imagem(item_id: int, file: UploadFile):
+    item = session.query(Item).filter_by(id = item_id).first()
+    if item is None:
+        raise HTTPException(status_code=404, detail="Item not found")
+
+    format = file.content_type.split('/')[1]
+    path_img = f'./storage/items/{item_id}.{format}'
+
+    with open(path_img, 'wb') as buffer:
+        shutil.copyfileobj(file.file, buffer)
+
+    item.img = path_img
+    session.add(item)
+    session.commit()
+
+    return {"filename": path_img }
+
+@router.get("/{item_id}/imagem")
+async def get_imagem(item_id: int):
+    item = session.query(Item).filter_by(id = item_id).first()
+    if item is None:
+        raise HTTPException(status_code=404, detail="Item not found")
+    elif item.img is None:
+        raise HTTPException(status_code=404, detail="Item without imagem")
+
+    return FileResponse(item.img)

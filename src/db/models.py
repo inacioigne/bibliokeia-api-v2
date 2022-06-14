@@ -30,6 +30,7 @@ class Item(Base):
     title = Column(String(length=255))
     marc = Column(JSON)
     logs = Column(JSON)
+    img = Column(String(100))
     created_at = Column(Date, default=datetime.now())
  
     access_points = relationship("Access_Points", back_populates="item")
@@ -59,7 +60,7 @@ class Exemplar(Base):
     shelf = Column(String(30))
     callnumber = Column(String(30))
     collection = Column(String(30))
-    number = Column(String(10))
+    number = Column(String(30))
     volume = Column(String(10))
     ex = Column(String(10))
     status = Column(String(30))

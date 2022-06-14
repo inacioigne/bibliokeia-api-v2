@@ -12,7 +12,8 @@ router = APIRouter()
 async def get_item():
     items = session.query(Item).all()
 
-    all_items = Items_Model(items=[Item_Model(marc=Marc_Bibliographic(**item.marc), id=item.id ) for item in items])
+    all_items = Items_Model(items=[Item_Model(marc=Marc_Bibliographic(**item.marc), id=item.id, 
+    img= f'http://localhost:8000/cataloguing/item/{item.id}/imagem' if item.img else None) for item in items])
 
     return all_items
 

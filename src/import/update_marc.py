@@ -1,13 +1,13 @@
-from cmath import e
 import json
+pathfile = 'src\import\json_marc.json'
 
 del_marc = {
     "controfields" : ["001"],
     "datafields": ["999"]
 }
 
-def delete_marc(typedata, tag):
-    with open("import/json_marc.json", encoding="utf8") as file:
+def delete_marc(pathfile, typedata, tag):
+    with open(pathfile, encoding="utf8") as file:
         records = json.load(file)
         file.close()
 
@@ -17,7 +17,7 @@ def delete_marc(typedata, tag):
         except:
             pass
 
-    with open('import/json_marc.json', 'w', encoding="utf8") as file:
+    with open(pathfile, 'w', encoding="utf8") as file:
         json.dump(records, file, indent=4, ensure_ascii=False) 
 
 
@@ -34,9 +34,19 @@ field = {
                 }
 }
 
-def add_marc(tag, field):
+field900 = {
+                "indicators": {
+                    "Ind1": "_",
+                    "Ind2": "_"
+                },
+                "subfields": {
+                    "a": "Livro"
+                }
+}
+
+def add_marc(pathfile, tag, field):
     list_json = list()
-    with open("import/json_marc.json", encoding="utf8") as file:
+    with open(pathfile, encoding="utf8") as file:
         records = json.load(file)
         file.close()
 
@@ -45,13 +55,13 @@ def add_marc(tag, field):
         record['datafields'][tag] = field
         list_json.append(record)
 
-    with open('import/json_marc.json', 'w', encoding="utf8") as file:
+    with open(pathfile, 'w', encoding="utf8") as file:
             json.dump(list_json, file, indent=4, ensure_ascii=False)
 
 
 
 def callNumber(pathfile):
-    with open("import/json_marc.json", encoding="utf8") as file:
+    with open(pathfile, encoding="utf8") as file:
         records = json.load(file)
         file.close()
 
@@ -71,7 +81,7 @@ def callNumber(pathfile):
     with open('import/json_marc.json', 'w', encoding="utf8") as file:
             json.dump(records, file, indent=4, ensure_ascii=False) 
 
-add_marc('852', field)
-callNumber("import/json_marc.json")
-delete_marc("controlfields", "001")
-delete_marc("datafields", "999")
+#add_marc(pathfile, '900', field900)
+# callNumber("import/json_marc.json")
+# delete_marc("controlfields", "001")
+#delete_marc(pathfile, "datafields", "942")

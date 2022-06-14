@@ -1,5 +1,5 @@
 from pydantic import BaseModel
-from typing import Dict, List
+from typing import Dict, List, Optional
 
 
 class Marc_Bibliographic(BaseModel):
@@ -13,6 +13,7 @@ class Field_Marc(BaseModel):
 
 class Item_Model(BaseModel):
     id: int
+    img: Optional[str]
     marc: Marc_Bibliographic
 
 class Items_Model(BaseModel):
