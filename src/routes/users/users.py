@@ -66,8 +66,6 @@ async def get_imagem(user_id: int):
     elif user.img is None:
         raise HTTPException(status_code=404, detail="User without imagem")
 
-
-
     return FileResponse(user.img)
 
     
