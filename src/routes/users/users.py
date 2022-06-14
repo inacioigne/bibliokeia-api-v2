@@ -8,10 +8,6 @@ from fastapi.responses import FileResponse
 
 router = APIRouter()
 
-# @router.get("/me", response_model=User_Response)
-# async def read_users_me(current_user: User_Response = Depends(get_current_active_user)):
-#     return current_user
-
 @router.get('/current_user')
 async def currrent_user(current_user: User_Response = Depends(get_current_user)):
     return current_user
@@ -69,8 +65,6 @@ async def get_imagem(user_id: int):
         raise HTTPException(status_code=404, detail="User not found")
     elif user.img is None:
         raise HTTPException(status_code=404, detail="User without imagem")
-
-
 
     return FileResponse(user.img)
 

@@ -1,7 +1,5 @@
-from cmath import e
 import json
-
-pathfile = "src\import\json_marc.json"
+pathfile = 'src\import\json_marc.json'
 
 del_marc = {
     "controfields" : ["001"],
@@ -31,28 +29,39 @@ field = {
                     "Ind2": "_"
                 },
                 "subfields": {
+                    "a": "Obras gerais",
+                    "c": "E1.P1"
+                }
+}
+
+field900 = {
+                "indicators": {
+                    "Ind1": "_",
+                    "Ind2": "_"
+                },
+                "subfields": {
                     "a": "Livro"
                 }
 }
 
-def add_marc(tag, field):
-    #list_json = list()
-    with open("src\import\json_marc.json", encoding="utf8") as file:
+def add_marc(pathfile, tag, field):
+    list_json = list()
+    with open(pathfile, encoding="utf8") as file:
         records = json.load(file)
         file.close()
 
     for record in records:
         
         record['datafields'][tag] = field
-        #list_json.append(record)
+        list_json.append(record)
 
-    with open('src\import\json_marc.json', 'w', encoding="utf8") as file:
-            json.dump(records, file, indent=4, ensure_ascii=False)
+    with open(pathfile, 'w', encoding="utf8") as file:
+            json.dump(list_json, file, indent=4, ensure_ascii=False)
 
 
 
 def callNumber(pathfile):
-    with open("import/json_marc.json", encoding="utf8") as file:
+    with open(pathfile, encoding="utf8") as file:
         records = json.load(file)
         file.close()
 
@@ -72,8 +81,7 @@ def callNumber(pathfile):
     with open('import/json_marc.json', 'w', encoding="utf8") as file:
             json.dump(records, file, indent=4, ensure_ascii=False) 
 
-#add_marc('900', field)
+#add_marc(pathfile, '900', field900)
 # callNumber("import/json_marc.json")
 # delete_marc("controlfields", "001")
-# delete_marc("datafields", "999")
-delete_marc(pathfile, "datafields", "942")
+#delete_marc(pathfile, "datafields", "942")

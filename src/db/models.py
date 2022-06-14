@@ -30,6 +30,7 @@ class Item(Base):
     title = Column(String(length=255))
     marc = Column(JSON)
     logs = Column(JSON)
+    img = Column(String(100))
     created_at = Column(Date, default=datetime.now())
  
     access_points = relationship("Access_Points", back_populates="item")
