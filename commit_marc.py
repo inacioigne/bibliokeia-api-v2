@@ -1,6 +1,7 @@
 from src.db.init_db import session
 from src.db.models import Item, Exemplar
 import json
+from datetime import datetime
 
 def send_marc():
     with open("src\import\json_marc.json", encoding="utf8") as file:
@@ -9,8 +10,17 @@ def send_marc():
 
     for record in records:
         title = record.get("datafields").get("245").get('subfields').get('a')
-        item = Item(title = title, marc = record)
+        item = Item(title = title)
+        session.add(item)
+        session.commit()
+        record.get('controlfields')['001'] = item.id
         exemplares = record.get('datafields').get('952')
+        record.get('datafields').pop('952')
+        item.marc = record
+        item.logs = {
+            'user': 'Importação automática', 
+            "date": datetime.now().strftime("%d/%m/%Y %H:%M")
+            }
         for exemplar in exemplares:
             e = Exemplar(
                 library = "Biblioteca do INPA",
@@ -26,4 +36,4 @@ def send_marc():
         session.commit() 
      
 
-send_marc()
+#send_marc()
