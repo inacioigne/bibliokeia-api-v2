@@ -2,16 +2,7 @@ import json
 from xml.dom.minidom import parse, parseString
 import xml.etree.ElementTree as et
 
-
-dom = parse("import/koha.xml")
-records = dom.getElementsByTagName('record')
-record = records[0]
-root = et.fromstring(record.toxml())
-
-leader = root.find('leader').text
-
-datafields = root.findall('datafield')
-datafield = datafields[0]
+shelf = 'P1'
 
 
 def tranform_json(marcxml_file):
@@ -19,7 +10,7 @@ def tranform_json(marcxml_file):
     records = dom.getElementsByTagName('record')
 
     json_list = list()
-    repetiveis = ['650', "710","700", "952"]
+    repetiveis = ['610', '650','651', "710","700", "952"]
 
     for record in records:
         json_marc = dict()
@@ -68,7 +59,7 @@ def tranform_json(marcxml_file):
         json_marc['datafields'] = data  
         json_list.append(json_marc)
 
-        with open('import/json_marc.json', 'w', encoding="utf8") as file:
+        with open(f'src\import\E1\{shelf}\marc.json', 'w', encoding="utf8") as file:
             json.dump(json_list, file, indent=4, ensure_ascii=False)
 
 
@@ -76,12 +67,4 @@ def tranform_json(marcxml_file):
 
     return json_list
 
-json_list = tranform_json("import/koha.xml")
-
-
-
-
-
-
-
-
+json_list = tranform_json(f"src\import\E1\{shelf}\koha.xml")

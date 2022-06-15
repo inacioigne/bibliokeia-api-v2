@@ -1,5 +1,8 @@
 import json
-pathfile = 'src\import\json_marc.json'
+
+shelf = 'P1'
+pathfile = f'src\import\E1\{shelf}\marc.json'
+
 
 del_marc = {
     "controfields" : ["001"],
@@ -23,14 +26,14 @@ def delete_marc(pathfile, typedata, tag):
 
 
 
-field = {
+field852 = {
                 "indicators": {
                     "Ind1": "_",
                     "Ind2": "_"
                 },
                 "subfields": {
                     "a": "Obras gerais",
-                    "c": "E1.P1"
+                    "c": f"E1.{shelf}"
                 }
 }
 
@@ -78,10 +81,12 @@ def callNumber(pathfile):
                 }
             }
 
-    with open('import/json_marc.json', 'w', encoding="utf8") as file:
+    with open(pathfile, 'w', encoding="utf8") as file:
             json.dump(records, file, indent=4, ensure_ascii=False) 
 
-#add_marc(pathfile, '900', field900)
-# callNumber("import/json_marc.json")
-# delete_marc("controlfields", "001")
-#delete_marc(pathfile, "datafields", "942")
+add_marc(pathfile, '900', field900)
+add_marc(pathfile, '852', field852)
+callNumber(pathfile)
+delete_marc(pathfile, "controlfields", "001")
+delete_marc(pathfile, "datafields", "942")
+delete_marc(pathfile, "datafields", "999")
