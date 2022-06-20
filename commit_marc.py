@@ -5,7 +5,7 @@ import json
 from datetime import datetime
 import httpx
 
-pathfile = 'src\import\E1\P1\marc.json'
+pathfile = 'src\import\E1\P2\marc.json'
 
 item_split = '?commit=true'\
             'split=/'\
@@ -18,8 +18,21 @@ item_split = '?commit=true'\
                                     '&f=serie:/datafields/490/subfields/a'\
                                         '&f=termo_topico:/datafields/650/subfields/a'\
                                                '&f=type:/datafields/900/subfields/a'
+
+def date_publication(tag008):
+    date_type = tag008[6]
+    if date_type == 's':
+        date = tag008[7:11]
+        try:
+            return int(date)
+        except:
+            return False
+    else:
+        return False
+   
+
 def indexing_solr(record, item_split=item_split):
-    year = record.get('datafields').get('260').get('subfields').get('c')[:4]
+    year = date_publication(record.get('controlfields')['008'])
     if year:
         record['year'] = int(year)
     solr = httpx.post(
@@ -31,6 +44,7 @@ def send_marc(pathfile=pathfile):
     with open(pathfile, encoding="utf8") as file:
         records = json.load(file)
         file.close()
+    records = records[11:]
 
     for record in records:
         title = record.get("datafields").get("245").get('subfields').get('a')
@@ -42,7 +56,7 @@ def send_marc(pathfile=pathfile):
         record.get('datafields').pop('952')
         item.marc = record
         item.logs = {
-            'user': 'Importação automática', 
+            'user': 'Automatic import', 
             "date": datetime.now().strftime("%d/%m/%Y %H:%M")
             }
         
@@ -63,4 +77,15 @@ def send_marc(pathfile=pathfile):
         session.commit() 
      
 
-#send_marc()
+
+def index_solr():
+
+    for i in range(1,19):
+        record = httpx.get(f'http://localhost:8000/cataloguing/item/{i}').json()
+        indexing_solr(record)
+
+
+#index_solr()
+send_marc()
+
+item = session.query(Item).filter_by(id = 29).first()
