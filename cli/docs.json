@@ -1,0 +1,288 @@
+[
+    {
+        "author": "Popper, Karl Raimund, ",
+        "call": "001 P831c",
+        "id": 1,
+        "publisher": "Ed. Universidade de Brasília, ",
+        "responsibilities": "Karl R. Popper; tradução de Sérgio Bath.",
+        "serie": "Pensamento científico ; ",
+        "subtitle": null,
+        "termo_topico": [
+            "Ciência",
+            "Teoria do conhecimento."
+        ],
+        "title": "Conjecturas e refutações / ",
+        "type": "Livro",
+        "year": "1982"
+    },
+    {
+        "author": null,
+        "call": "001.0141 D687",
+        "id": 2,
+        "publisher": "NJR/ECA/USP, ",
+        "responsibilities": "Glória Kreinz, Crodowaldo Pavan, organizadores.",
+        "serie": "Divulgação Científica ; ",
+        "subtitle": "estudos sobre divulgação científica / ",
+        "termo_topico": [
+            "Divulgação científica."
+        ],
+        "title": "Os donos da paisagem : ",
+        "type": "Livro",
+        "year": "2000"
+    },
+    {
+        "author": null,
+        "call": "001.14 C776",
+        "id": 3,
+        "publisher": "Ministère des Affaires Etrangères, Ambassade de France en Brésil, ",
+        "responsibilities": "Ministère des affaires Etrangères, Ambassade de France en Brésil.",
+        "serie": null,
+        "subtitle": "meio ambiente = ",
+        "termo_topico": [
+            "Ciências ambientais"
+        ],
+        "title": "Cooperação Brasil-França : ",
+        "type": "Livro",
+        "year": "1994"
+    },
+    {
+        "author": null,
+        "call": "001.4 B588p",
+        "id": 4,
+        "publisher": "FIOCRUZ, ",
+        "responsibilities": null,
+        "serie": null,
+        "subtitle": null,
+        "termo_topico": [
+            "Pesquisa",
+            "Pesquisa",
+            "Saúde pública"
+        ],
+        "title": "<I=     1> Bienal de Pesquisa da Fundação Oswaldo Cruz, 7 a 11 de dezembro de 1998.",
+        "type": "Livro",
+        "year": "1998"
+    },
+    {
+        "author": null,
+        "call": "001.4 B823c",
+        "id": 5,
+        "publisher": "Capes, ",
+        "responsibilities": "Coordenadores Arlindo Philippi Jr,, Maria do Carmo Martins Sobral.",
+        "serie": null,
+        "subtitle": "capes na rio+20 / ",
+        "termo_topico": [
+            "Desenvolvimento sustentável.",
+            "Pesquisa científica."
+        ],
+        "title": "Contribuição da pós-graduação brasileira para o desenvolvimento sustentável : ",
+        "type": "Livro",
+        "year": "2012"
+    },
+    {
+        "author": null,
+        "call": "001.4 F218h",
+        "id": 6,
+        "publisher": "FAPESP, ",
+        "responsibilities": "Fundação de Amparo à Pesquisa do Estado de São Paulo. ",
+        "serie": null,
+        "subtitle": " uma história de política científica e tecnológica / ",
+        "termo_topico": [
+            "Pesquisa e Subdesenvolvimento.",
+            "FAPESP e globalização. ",
+            "Desafios institucionais."
+        ],
+        "title": "FAPESP: ",
+        "type": "Livro",
+        "year": "1999"
+    },
+    {
+        "author": null,
+        "call": "001.4 F218p",
+        "id": 7,
+        "publisher": "FAPESP, ",
+        "responsibilities": "(Org.) Shozo Motoyama, Amélia Império Hamburger, Marilda Nagamini.",
+        "serie": null,
+        "subtitle": "marcos documentais / ",
+        "termo_topico": [
+            "Ciência e pesquisa",
+            "Política científica e tecnológica.",
+            "Ciência e tecnologia. "
+        ],
+        "title": "Para uma história da FAPESP:  ",
+        "type": "Livro",
+        "year": "1999"
+    },
+    {
+        "author": null,
+        "call": "001.4 F981",
+        "id": 8,
+        "publisher": "Fapeam, ",
+        "responsibilities": "Fundação de Amparo à Pesquisa do Estado do Amazonas.",
+        "serie": null,
+        "subtitle": null,
+        "termo_topico": [
+            "Relatório de atividades"
+        ],
+        "title": "Relatório de atividades 2003-2008 / ",
+        "type": "Livro",
+        "year": "2009"
+    },
+    {
+        "author": null,
+        "call": "001.4 J82",
+        "id": 9,
+        "publisher": "FIOCRUZ, ",
+        "responsibilities": null,
+        "serie": null,
+        "subtitle": "anais / ",
+        "termo_topico": [
+            "Ciência",
+            "Pesquisa"
+        ],
+        "title": "V Jornada científica de pos-graduação da FIOCRUZ:  ",
+        "type": "Livro",
+        "year": "1999"
+    },
+    {
+        "author": null,
+        "call": "001.4 J82a",
+        "id": 10,
+        "publisher": "FIOCRUZ, ",
+        "responsibilities": "III Jornada científica da Fundação Oswaldo Cruz.",
+        "serie": null,
+        "subtitle": null,
+        "termo_topico": [
+            "Ciência",
+            "Pesquisa"
+        ],
+        "title": "Anais / ",
+        "type": "Livro",
+        "year": "1985"
+    },
+    {
+        "author": null,
+        "call": "001.4 J82",
+        "id": 11,
+        "publisher": "Universidade do Amazonas, ",
+        "responsibilities": "VI Jornada de Iniciação Científica da Universidade do Amazonas, 28 de agosto.",
+        "serie": null,
+        "subtitle": null,
+        "termo_topico": [
+            "Ciência",
+            "Pesquisa"
+        ],
+        "title": "Anais / ",
+        "type": "Livro",
+        "year": "1997"
+    },
+    {
+        "author": null,
+        "call": "001.4 F981",
+        "id": 12,
+        "publisher": "Fapesp, ",
+        "responsibilities": "Fundação de Amparo à Pesquisa do Estado de São Paulo.",
+        "serie": null,
+        "subtitle": null,
+        "termo_topico": [
+            "Relatório de atividades"
+        ],
+        "title": "Relatório de atividades 2007 / ",
+        "type": "Livro",
+        "year": "2007"
+    },
+    {
+        "author": null,
+        "call": "001.4 J82",
+        "id": 13,
+        "publisher": "UFAM, ",
+        "responsibilities": "VII [i.e. VIII] Jornada de Iniciação Científica da Universidade do Amazonas, 19 de agosto de 1999, Manaus, AM.",
+        "serie": null,
+        "subtitle": null,
+        "termo_topico": [
+            "Ciência",
+            "Pesquisa"
+        ],
+        "title": "Resumos / ",
+        "type": "Livro",
+        "year": "1999"
+    },
+    {
+        "author": null,
+        "call": "AM 001.4 C749d",
+        "id": 14,
+        "publisher": "UFAM, ",
+        "responsibilities": "XI Congresso de Iniciação Científica da Universidade Federal do Amazonas, 5 a 9 de agosto de 2002, Manaus-AM.",
+        "serie": null,
+        "subtitle": null,
+        "termo_topico": [
+            "Ciência",
+            "Pesquisa"
+        ],
+        "title": "Resumos / ",
+        "type": "Livro",
+        "year": "2002"
+    },
+    {
+        "author": null,
+        "call": "001.4 J82",
+        "id": 15,
+        "publisher": "UA, ",
+        "responsibilities": "IX Jornada de Iniciação Científica da Universidade do Amazonas, 23 e 24 de agosto de 2000, Manaus, AM.",
+        "serie": null,
+        "subtitle": null,
+        "termo_topico": [
+            "Ciência",
+            "Pesquisa"
+        ],
+        "title": "Resumos / ",
+        "type": "Livro",
+        "year": "2000"
+    },
+    {
+        "author": null,
+        "call": "001.4 J82",
+        "id": 16,
+        "publisher": "UFAM, ",
+        "responsibilities": "X Jornada de Iniciação Científica da Universidade do Amazonas, 3 e 4 setembro de 2001, Manaus-AM.",
+        "serie": null,
+        "subtitle": null,
+        "termo_topico": [
+            "Ciência",
+            "Pesquisa"
+        ],
+        "title": "Resumos / ",
+        "type": "Livro",
+        "year": "2001"
+    },
+    {
+        "author": null,
+        "call": "001.4 J82",
+        "id": 17,
+        "publisher": "UFAM, ",
+        "responsibilities": "VII Jornada de Iniciação Científica da Universidade do Amazonas, 26-27 de agosto de 1998, Manaus-AM.",
+        "serie": null,
+        "subtitle": null,
+        "termo_topico": [
+            "Ciência",
+            "Pesquisa"
+        ],
+        "title": "Resumos / ",
+        "type": "Livro",
+        "year": "1998"
+    },
+    {
+        "author": null,
+        "call": "001.4 I59",
+        "id": 18,
+        "publisher": "IPAM, ",
+        "responsibilities": "Instituto de Pesquisa Ambiental da Amazônia.",
+        "serie": null,
+        "subtitle": null,
+        "termo_topico": [
+            "Relatório de atividades"
+        ],
+        "title": "Relatório de atividades 2010 / ",
+        "type": "Livro",
+        "year": "2011"
+    }
+]

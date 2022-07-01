@@ -127,9 +127,11 @@ async def upload_imagem(item_id: int, file: UploadFile):
 @router.get("/{item_id}/imagem")
 async def get_imagem(item_id: int):
     item = session.query(Item).filter_by(id = item_id).first()
+   
     if item is None:
         raise HTTPException(status_code=404, detail="Item not found")
     elif item.img is None:
-        raise HTTPException(status_code=404, detail="Item without imagem")
+        #raise HTTPException(status_code=404, detail="Item without imagem")
+        return FileResponse("./storage/items/default.png")
 
     return FileResponse(item.img)
